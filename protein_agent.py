@@ -1,6 +1,5 @@
 """
 Protein Structure Prediction Agent
-IONLACE Technical Interview Assignment
 
 Refactored agent module for web service integration
 """
