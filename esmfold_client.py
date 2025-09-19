@@ -1,6 +1,5 @@
 """
 ESMFold Client for Protein Structure Prediction
-IONLACE Technical Interview Assignment
 
 Provides both local inference and API fallback capabilities
 """
