@@ -1,6 +1,5 @@
 """
 Pydantic models for the Protein Structure Prediction API
-IONLACE Technical Interview Assignment
 """
 
 from typing import Dict, Any, Optional, List
