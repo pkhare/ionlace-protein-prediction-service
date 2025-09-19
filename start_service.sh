@@ -1,10 +1,8 @@
 #!/bin/bash
 
 # Protein Structure Prediction Service Startup Script
-# IONLACE Technical Interview Assignment
 
 echo "🚀 Starting Protein Structure Prediction Service"
-echo "IONLACE Technical Interview Assignment"
 echo "================================================"
 
 # Check if Python is available
