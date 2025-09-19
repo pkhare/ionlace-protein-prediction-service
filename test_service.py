@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """
 Test script for the Protein Structure Prediction Web Service
-IONLACE Technical Interview Assignment
 """
 
 import asyncio
@@ -171,7 +170,6 @@ async def run_all_tests():
 def main():
     """Main function"""
     print("Protein Structure Prediction Service Test Suite")
-    print("IONLACE Technical Interview Assignment")
     print()
     
     try:
