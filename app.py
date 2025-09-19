@@ -1,6 +1,5 @@
 """
 Protein Structure Prediction Web Service
-IONLACE Technical Interview Assignment
 
 A FastAPI-based web service that provides protein structure prediction
 capabilities through an autonomous agent system.
@@ -75,7 +74,7 @@ async def lifespan(app: FastAPI):
 # Create FastAPI app
 app = FastAPI(
     title="Protein Structure Prediction Service",
-    description="IONLACE Technical Interview Assignment - Autonomous protein structure prediction agent",
+    description="Autonomous protein structure prediction agent",
     version="1.0.0",
     docs_url="/docs",
     redoc_url="/redoc",
@@ -98,7 +97,7 @@ async def root():
         service="Protein Structure Prediction Service",
         version="1.0.0",
         status="healthy",
-        description="IONLACE Technical Interview Assignment - Autonomous protein structure prediction agent"
+        description="Autonomous protein structure prediction agent"
     )
 
 @app.get("/health", response_model=HealthResponse)
@@ -108,7 +107,7 @@ async def health_check():
         service="Protein Structure Prediction Service",
         version="1.0.0",
         status="healthy",
-        description="IONLACE Technical Interview Assignment - Autonomous protein structure prediction agent"
+        description="Autonomous protein structure prediction agent"
     )
 
 @app.post("/predict", response_model=PredictionResponse)
