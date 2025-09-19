@@ -1,4 +1,4 @@
-# 🧬 IONLACE Protein Structure Prediction Service
+# 🧬 A Protein Structure Prediction Service - Agentic
 
 A production-ready web service for autonomous protein structure prediction using ESMFold and advanced AI agents.
 
