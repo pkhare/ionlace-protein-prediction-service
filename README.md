@@ -45,13 +45,13 @@ A production-ready web service for autonomous protein structure prediction using
 ### 1. Clone the Repository
 ```bash
 git clone <your-repo-url>
-cd Ionlace-Task
+cd Protpred
 ```
 
 ### 2. Create Conda Environment
 ```bash
-conda create -n ionlace-env python=3.10 -y
-conda activate ionlace-env
+conda create -n protpred-env python=3.10 -y
+conda activate protpred-env
 ```
 
 ### 3. Install Dependencies
@@ -78,8 +78,8 @@ docker-compose up --build
 
 ### Manual Docker Build
 ```bash
-docker build -t ionlace-service .
-docker run -p 8000:8000 ionlace-service
+docker build -t protpred-service .
+docker run -p 8000:8000 protpred-service
 ```
 
 ## 📚 API Endpoints
@@ -198,7 +198,7 @@ curl -X POST "http://localhost:8000/predict" \
 
 3. **Environment Issues**
    - Ensure correct Python version (3.10+)
-   - Activate conda environment: `conda activate ionlace-env`
+   - Activate conda environment: `conda activate protpred-env`
    - Reinstall dependencies: `pip install -r requirements.txt`
 
 ### Logs and Debugging
@@ -216,7 +216,7 @@ curl -X POST "http://localhost:8000/predict" \
 
 ## 📄 License
 
-This project is part of the IONLACE Technical Interview Assignment.
+This project is an experimental task to test agentic approach towards protein prediction, using different models and APIs.
 
 ## 🙏 Acknowledgments
 
