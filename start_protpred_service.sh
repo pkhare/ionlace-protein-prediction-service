@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# Ionlace Protein Structure Prediction Service Startup Script
+# Protein Structure Prediction Service Startup Script
 # This script ensures the correct conda environment is activated
 
-echo "🚀 Starting Ionlace Protein Structure Prediction Service"
+echo "🚀 Starting Protein Structure Prediction Service"
 echo "========================================================"
 
 # Check if conda is available
@@ -13,21 +13,21 @@ if ! command -v conda &> /dev/null; then
     exit 1
 fi
 
-# Check if the ionlace-env exists
-if ! conda env list | grep -q "ionlace-env"; then
-    echo "❌ ionlace-env not found. Creating it now..."
-    conda create -n ionlace-env python=3.9 -y
+# Check if the protpred-env exists
+if ! conda env list | grep -q "protpred-env"; then
+    echo "❌ protpred-env not found. Creating it now..."
+    conda create -n protpred-env python=3.9 -y
     echo "📦 Installing dependencies..."
-    conda activate ionlace-env
+    conda activate protpred-env
     pip install -r requirements.txt
 else
-    echo "📦 Activating ionlace-env environment..."
-    conda activate ionlace-env
+    echo "📦 Activating protpred-env environment..."
+    conda activate protpred-env
 fi
 
 # Verify we're in the right environment
-if [[ "$CONDA_DEFAULT_ENV" != "ionlace-env" ]]; then
-    echo "❌ Failed to activate ionlace-env environment"
+if [[ "$CONDA_DEFAULT_ENV" != "protpred-env" ]]; then
+    echo "❌ Failed to activate protpred-env environment"
     exit 1
 fi
 
