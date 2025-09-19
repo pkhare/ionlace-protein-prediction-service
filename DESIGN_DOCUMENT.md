@@ -1,8 +1,8 @@
-# 🏗️ IONLACE Protein Structure Prediction Service - Design Document
+# 🏗️ Protein Structure Prediction Service - Design Document
 
 ## 📋 Executive Summary
 
-The IONLACE Protein Structure Prediction Service is a production-ready web application that transforms protein amino acid sequences into 3D structural predictions using state-of-the-art AI models. The system implements an autonomous agent architecture that orchestrates complex workflows while providing robust fallback mechanisms.
+The Protein Structure Prediction Service is a production-ready web application that transforms protein amino acid sequences into 3D structural predictions using state-of-the-art AI models. The system implements an autonomous agent architecture that orchestrates complex workflows while providing robust fallback mechanisms.
 
 ## 🎯 System Goals
 
@@ -281,7 +281,7 @@ Error Occurrence → Error Classification → Response Strategy → Client Commu
 ## 🔄 Implementation Approaches: Notebook vs Production
 
 ### **Jupyter Notebook Approach (Original Implementation)**
-The original `Ionlace_task_PrashantKhare.ipynb` was developed in a **CUDA-enabled environment** with the following characteristics:
+The original `main_protpred_notebook.ipynb` was developed in a **CUDA-enabled environment** with the following characteristics:
 
 #### **Environment & Infrastructure**
 - **Hardware**: GPU-enabled machine with CUDA support
@@ -463,7 +463,7 @@ This approach ensures the service can leverage GPU acceleration when available w
 
 ## 📚 Conclusion
 
-The IONLACE Protein Structure Prediction Service represents a robust, production-ready implementation that balances performance, reliability, and maintainability. The autonomous agent architecture provides intelligent workflow orchestration while the multi-layered fallback system ensures high availability.
+The Protein Structure Prediction Service represents a robust, production-ready implementation that balances performance, reliability, and maintainability. The autonomous agent architecture provides intelligent workflow orchestration while the multi-layered fallback system ensures high availability.
 
 ### **Evolution from Research to Production**
 
