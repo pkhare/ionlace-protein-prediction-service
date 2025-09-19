@@ -1,5 +1,4 @@
 # Protein Structure Prediction Service
-# IONLACE Technical Interview Assignment
 
 FROM python:3.9-slim
 
